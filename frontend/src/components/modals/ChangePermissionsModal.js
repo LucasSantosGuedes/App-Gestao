@@ -46,7 +46,7 @@ const ChangePermissionsModal = ({
             style={getChangePermissionsPosition(permissionButton.current)}
         >
             <div className="label-modal__header">
-                <p>Change Permissions</p>
+                <p>Alterar permissões</p>
                 <button onClick={() => setShowModal(false)}>
                     <i className="fal fa-times"></i>
                 </button>
@@ -55,7 +55,7 @@ const ChangePermissionsModal = ({
                 <div className="label-modal__option">
                     {member.access_level === 2 ? (
                         <p className="label-modal__option-header">
-                            Admin
+                            Administrador
                             <i class="fal fa-check"></i>
                         </p>
                     ) : (
@@ -63,13 +63,13 @@ const ChangePermissionsModal = ({
                             className="label-modal__option-header"
                             onClick={() => changePermission(2)}
                         >
-                            Admin
+                            Administrador
                         </button>
                     )}
 
                     <p className="label-modal__option-subtitle">
-                        Can view, create and edit project boards, change project
-                        settings, and invite new members.
+                        Pode visualizar, criar e editar painéis de projeto, alterar projeto
+                        configurações e convidar novos membros.
                     </p>
                 </div>
                 <div className="label-modal__option">
@@ -87,7 +87,7 @@ const ChangePermissionsModal = ({
                         </button>
                     )}
                     <p className="label-modal__option-subtitle">
-                        Can view, create and edit project boards.
+                    Pode visualizar, criar e editar painéis de projeto.
                     </p>
                 </div>
             </div>

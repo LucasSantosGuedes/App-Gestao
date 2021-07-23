@@ -48,14 +48,13 @@ const CreateTeamModal = ({ setShowModal, addProject }) => {
     return (
         <div className="create-team">
             <div className="create-team__form">
-                <p className="create-team__title">Start a Project</p>
+                <p className="create-team__title">Começar um Projeto</p>
                 <p className="create-team__subtitle">
-                    Boost your productivity by making it easier for everyone to
-                    access boards in one location.
+                Aumente sua produtividade, tornando mais fácil para todos acessarem placas em um local.
                 </p>
 
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <label htmlFor="title">Project Name</label>
+                    <label htmlFor="title">Nome do Projeto</label>
                     <input
                         name="title"
                         ref={register({ required: true })}
@@ -64,28 +63,28 @@ const CreateTeamModal = ({ setShowModal, addProject }) => {
                         onBlur={animateFaces}
                     />
 
-                    <label htmlFor="description">Project Description</label>
+                    <label htmlFor="description">Descrição do Projeto</label>
                     <textarea
                         name="description"
                         ref={register}
-                        placeholder="Get your members on board with a few words about your project"
+                        placeholder="Faça com que seus membros concordem com algumas palavras sobre seu projeto"
                     ></textarea>
 
-                    <label htmlFor="members">Invite Members</label>
+                    <label htmlFor="members">Convidar Membros</label>
                     <input
                         name="members"
                         ref={register}
                         type="text"
-                        placeholder="Type in username or email"
+                        placeholder="Digite o nome de usuário ou e-mail"
                     />
 
                     {titleValue.trim() !== "" ? (
                         <button type="submit" className="btn">
-                            Create Project
+                            Criar Projeto
                         </button>
                     ) : (
                         <button className="btn btn--disabled" disabled>
-                            Create Project
+                            Criar Projeto
                         </button>
                     )}
                 </form>

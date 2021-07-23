@@ -34,7 +34,7 @@ const LandingHeader = () => {
 				<ul className="landing-header__list">
 					<li className="landing-header__li">
 						<Link to="/login">
-							Login
+							Entrar
 						</Link>
 					</li>
 					<li className="landing-header__li">

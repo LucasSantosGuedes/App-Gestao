@@ -143,27 +143,27 @@ const EditCardModal = ({ card, list, setShowModal }) => {
                     <ul className="edit-modal__actions">
                         <li>
                             <a className="btn btn--secondary btn--small">
-                                <i className="fal fa-tags"></i> Edit Labels
+                                <i className="fal fa-tags"></i> Editar etiquetas
                             </a>
                         </li>
                         <li>
                             <a className="btn btn--secondary btn--small">
-                                <i className="fal fa-user"></i> Change Members
+                                <i className="fal fa-user"></i> Mudar de membros
                             </a>
                         </li>
                         <li>
                             <a className="btn btn--secondary btn--small">
-                                <i className="fal fa-arrow-right"></i> Move
+                                <i className="fal fa-arrow-right"></i> Mover
                             </a>
                         </li>
                         <li>
                             <a className="btn btn--secondary btn--small">
-                                <i className="fal fa-clock"></i> Change Due Date
+                                <i className="fal fa-clock"></i> Alterar data de vencimento
                             </a>
                         </li>
                         <li>
                             <a className="btn btn--secondary btn--small">
-                                <i className="fal fa-image"></i> Cover
+                                <i className="fal fa-image"></i> Cobrir
                             </a>
                         </li>
                     </ul>

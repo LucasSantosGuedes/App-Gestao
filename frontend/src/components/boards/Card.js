@@ -199,17 +199,17 @@ const EditControls = ({
             >
                 <li>
                     <button onClick={() => setShowLabelModal(true)}>
-                        <i className="fal fa-tags"></i> Edit Labels
+                        <i className="fal fa-tags"></i> Editar etiquetas
                     </button>
                 </li>
                 <li>
-                    <i className="fal fa-user"></i> Change Members
+                    <i className="fal fa-user"></i> Mudar de membros
                 </li>
                 <li>
-                    <i className="fal fa-arrow-right"></i> Move
+                    <i className="fal fa-arrow-right"></i> Mover
                 </li>
                 <li>
-                    <i className="fal fa-clock"></i> Change Due Date
+                    <i className="fal fa-clock"></i> Alterar data de vencimento
                 </li>
             </ul>
         </div>

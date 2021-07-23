@@ -29,7 +29,7 @@ const SearchModal = ({backendQuery, searchElem, setShowModal}) => {
 		        ))}
 		    </ul>
 
-		    <p className="search-suggestions__title">Boards</p>
+		    <p className="search-suggestions__title">Pranchas</p>
 		    <ul className="search-suggestions__boards">
 		        {(boards || []).map(board => (
 		        	<SearchedBoard board={board} setShowModal={setShowModal} key={uuidv4()}/>

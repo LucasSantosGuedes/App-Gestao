@@ -40,7 +40,7 @@ const LoginForm = ({setErrMsgs}) => {
           className="sidebar-input border--gray border--onHoverBlue"
           type="password"
           name="password"
-          placeholder="Password"
+          placeholder="Senha"
           ref={register({ required: true })}
         />
         {

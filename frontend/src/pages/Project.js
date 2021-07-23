@@ -86,7 +86,7 @@ const Project = (props) => {
                             }`}
                             onClick={() => setCurTab(1)}
                         >
-                            Boards
+                            Pranchas
                         </li>
                         <li
                             className={`team__tab${
@@ -94,21 +94,21 @@ const Project = (props) => {
                             }`}
                             onClick={() => setCurTab(2)}
                         >
-                            Members
+                            Membros
                         </li>
                         <li
                             className={`team__tab${
                                 curTab == 3 ? " team__tab--active" : ""
                             }`}
                         >
-                            Settings
+                            Configurações
                         </li>
                         <li
                             className={`team__tab${
                                 curTab == 4 ? " team__tab--active" : ""
                             }`}
                         >
-                            Business Class
+                            classe executiva
                         </li>
                     </ul>
                 </div>
@@ -124,14 +124,13 @@ const Project = (props) => {
                 {curTab == 2 && (
                     <div className="team__members">
                         <div className="team__members-header">
-                            <p>Team Members ({project.members.length})</p>
+                            <p>Membros do time ({project.members.length})</p>
                             {authUserAccessLevel === 2 && (
                                 <button
                                     className="btn btn--medium"
                                     onClick={() => setIsInviting(true)}
                                 >
-                                    <i className="fal fa-user-plus"></i> Invite
-                                    Team Members
+                                    <i className="fal fa-user-plus"></i> Convidar membros do time
                                 </button>
                             )}
                         </div>
@@ -184,18 +183,18 @@ const EditForm = ({ project, setProject, setIsEditing }) => {
     };
     return (
         <form className="team__edit-form" onSubmit={handleSubmit(onSubmit)}>
-            <label htmlFor="title">Name</label>
+            <label htmlFor="title">Nome</label>
             <input
                 name="title"
                 ref={register({ required: true })}
                 type="text"
             />
 
-            <label htmlFor="description">Project Description</label>
+            <label htmlFor="description">Descrição do Projeto</label>
             <textarea name="description" ref={register}></textarea>
 
             {titleValue.trim() !== "" ? (
-                <button className="btn btn--medium">Save</button>
+                <button className="btn btn--medium">Salvar</button>
             ) : (
                 <button className="btn btn--medium btn--disabled" disabled>
                     Save
@@ -205,7 +204,7 @@ const EditForm = ({ project, setProject, setIsEditing }) => {
                 className="btn btn--secondary btn--medium"
                 onClick={() => setIsEditing(false)}
             >
-                Cancel
+                Cancelar
             </button>
         </form>
     );
@@ -270,8 +269,8 @@ const Member = ({ user, authUser, setProject }) => {
                     >
                         <i className="fal fa-times"></i>
                         {authUser.username === user.username
-                            ? "Leave"
-                            : "Remove"}
+                            ? "Sair"
+                            : "Remover"}
                     </button>
                 )}
             </div>

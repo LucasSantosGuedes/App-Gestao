@@ -27,7 +27,7 @@ const TabOne = ({ display, register }) => {
         className="sidebar-input border--gray border--onHoverBlue"
         type="text"
         name="username"
-        placeholder="Username"
+        placeholder="Nome do Usuário"
         ref={register({ required: true })}
       />
     </div>
